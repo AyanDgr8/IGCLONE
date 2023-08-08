@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB_URI)
         console.log("Connection to DB failed!", err);
     });
     
-  const postsRoutes = require('../routes/posts');
+  const postsRoutes = require('../routes/post');
   app.use(postsRoutes);
   
   app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
