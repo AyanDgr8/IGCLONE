@@ -27,7 +27,6 @@ router.post('/upload', upload.single('image'), (req, res) => {
     res.json({ imageUrl });
 });
 
-
 router.post('/add-post', (req, res) => {
   const { name, location, likes, description, imageUrl } = req.body;
 
