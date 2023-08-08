@@ -100,8 +100,8 @@
     "xtend": "^4.0.2"
   },
   "scripts": {
-    "build":"npm install",
-    "start":"node server.js",
+    "build": "npm install",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
