@@ -1,5 +1,8 @@
+// index.js
+
 const Express = require("express")
 const mongoose = require("mongoose");
+require('dotenv').config();
 
 let data = require("./data/data");
 const App = Express();

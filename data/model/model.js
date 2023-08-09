@@ -1,3 +1,4 @@
+// data/model/model.js
 
 let mogoose = require("mongoose");
 
