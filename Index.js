@@ -11,7 +11,7 @@ App.use(cors());
 let bodyparser = require("body-parser");
 App.use(bodyparser.json());
 App.use("/",data)
-
+const port = 5000;
 
 // App.use('/uploads', Express.static('./uploads'));
 
@@ -24,4 +24,4 @@ mongoose.connect(process.env.MONGODB_URL)
     console.log("Connection to DB failed!", err);
 });
 
-App.listen(300,()=>console.log("server running 300"));
+App.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
