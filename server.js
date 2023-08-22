@@ -1,26 +1,26 @@
-// server.js
-require('dotenv').config();
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-app.use(cors());
-const path = require('path'); // Make sure to require 'path'
+// // server.js
+// require('dotenv').config();
+// const express = require('express');
+// const mongoose = require('mongoose');
+// const cors = require('cors');
+// app.use(cors());
+// const path = require('path'); // Make sure to require 'path'
 
-const app = express();
-const port = 5000;
-app.use(express.json());
-app.use(cors());
+// const app = express();
+// const port = 5000;
+// app.use(express.json());
+// app.use(cors());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URL)
-    .then((response) => {
-        console.log("Connected to mongo DB successfully!");
-    })
-    .catch( err => {
-        console.log("Connection to DB failed!", err);
-    });
+// // Connect to MongoDB
+// mongoose.connect(process.env.MONGODB_URL)
+//     .then((response) => {
+//         console.log("Connected to mongo DB successfully!");
+//     })
+//     .catch( err => {
+//         console.log("Connection to DB failed!", err);
+//     });
     
-const postsRoutes = require('./routes/posts'); // Update the path to include ./routes/posts
-app.use(postsRoutes);
+// const postsRoutes = require('./routes/posts'); // Update the path to include ./routes/posts
+// app.use(postsRoutes);
 
-app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
+// app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));

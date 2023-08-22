@@ -3,14 +3,14 @@
 const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
-  name: String,
-  location: String,
-  likes: Number,
-  description: String,
-  PostImage: String, // Add the PostImage field for storing the image path
-  date: Date,
+  name: {type:String,required:true},
+  postImage:{type:String,required:true},
+  Location: {type:String,required:true},
+  description:{type:String,required:true},
+  date:{type:Date,required:true},
+  likes:{type:Number,default:0}
 });
 
-const Post = mongoose.model('Post', postSchema);
+const InstaPost = mongoose.model("Instapost",postShchema);
 
-module.exports = Post;
+module.exports = InstaPost;

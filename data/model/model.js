@@ -1,9 +1,9 @@
 // data/model/model.js
 
-let mogoose = require("mongoose");
+let mongoose = require("mongoose");
 
 
-let data = mogoose.Schema({
+let data = mongoose.Schema({
     name:{type:String},
     location:{type:String},
     description:{type:String},
@@ -16,6 +16,6 @@ let data = mogoose.Schema({
       
 })
 
-let instaClone = mogoose.model("instaClone",data)
+let instaClone = mongoose.model("instaClone",data)
 
 module.exports = instaClone;

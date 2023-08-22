@@ -14,9 +14,9 @@ const storage = multer.diskStorage({
       // Use the current timestamp as the file name to avoid collisions
       cb(null, Date.now() + path.extname(file.originalname));
     }
-  });
+});
   
-  const upload = multer({ storage: storage });
+const upload = multer({ storage: storage });
 // Handle image upload
 router.post('/upload', upload.single('image'), (req, res) => {
     if (!req.file) {
