@@ -1,4 +1,3 @@
-
 {
   "name": "instaclone_backend",
   "version": "1.0.0",
@@ -30,6 +29,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
     "finalhandler": "^1.2.0",
     "forwarded": "^0.2.0",
     "fresh": "^0.5.2",

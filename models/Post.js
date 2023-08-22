@@ -1,4 +1,4 @@
-
+// models/Post.js
 
 const mongoose = require('mongoose');
 
@@ -11,6 +11,6 @@ const postSchema = new mongoose.Schema({
   likes:{type:Number,default:0}
 });
 
-const InstaPost = mongoose.model("Instapost",postShchema);
+const InstaPost = mongoose.model("Instapost",postSchema);
 
 module.exports = InstaPost;

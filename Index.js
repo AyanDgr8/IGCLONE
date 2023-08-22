@@ -4,7 +4,7 @@
 // const mongoose = require("mongoose");
 // require('dotenv').config();
 
-// let data = require("./data/data");
+let data = require("./data/data");
 // const App = Express();
 // const cors = require("cors");
 // App.use(cors());
@@ -13,17 +13,17 @@
 // App.use("/",data)
 // App.use('/uploads', Express.static('./uploads'));
 
-const express = require("express");
-const app  =  express();
+const Express = require("express");
+const app = Express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
 require("dotenv").config();
-const postRouter = require("./Router/PostRouter")
+const postRouter = require("./routes/posts")
 const port = 5000;
 
 
-app.use(express.json());
+app.use(Express.json());
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URL)
 .then((response) => {
